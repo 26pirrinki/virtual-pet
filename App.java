@@ -13,6 +13,10 @@ public class App {
         Pet pet = new Pet(petName);
 
         System.out.println("\n" + pet.getName() + " says hello!");
+        System.out.println("  .\r\n" + //
+                        " ..^____/\r\n" + //
+                        "`-. ___ )---|\r\n" + //
+                        "  ||  ||");
 
         int fetchSkill = 50;
         while (game != 0) {
@@ -30,6 +34,10 @@ public class App {
                 System.out.println("Please enter a valid number.");
             }
             if (game == 1) {
+                System.out.println("  .\r\n" + //
+                                    " ..^____/\r\n" + //
+                                    "`-. ___ )---|      whoosh\r\n" + //
+                                    "\\\\ \\\\       ");
                 System.out.println("\nwaiting for " + pet.getName() + " to return...\n");
                 int waitTime = rand.nextInt(5000 - 1000 + 1) + 1000;
                 while (waitTime > 0) {
@@ -93,8 +101,13 @@ public class App {
                 }
             }
             if (game == 3) {
-                System.out.println("\nGood idea! " + pet.getName() + " is getting hungry.");
-                Thread.sleep(1000);
+                System.out.println("\nGood idea! " + pet.getName() + " is getting hungry. No wonder they're already waiting for you at their food bowl!");
+                System.out.println(" ,    /-.\r\n" + //
+                                        "((___/ __>\r\n" + //
+                                        "/      }\r\n" + //
+                                        "\\ .--.(    ___\r\n" + //
+                                        "\\\\   \\\\   /___\\");
+                Thread.sleep(2000);
                 System.out.println("\n" + "However, " + pet.getName() +
                         " is a picky eater and will only eat their food in a certain order.");
                 Thread.sleep(2000);
